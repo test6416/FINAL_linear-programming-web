@@ -1,0 +1,16 @@
+{
+  "name": "Unbounded Example",
+
+  "type": "max",
+
+  "objective": [2, 1],
+
+  "constraints": [
+
+    {
+      "coefficients": [1, -1],
+      "sign": ">=",
+      "rhs": 1
+    }
+  ]
+}

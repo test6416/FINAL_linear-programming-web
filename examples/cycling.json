@@ -1,0 +1,28 @@
+{
+  "name": "Cycling Example",
+
+  "type": "max",
+
+  "objective": [10, -57, -9, -24],
+
+  "constraints": [
+
+    {
+      "coefficients": [0.5, -5.5, -2.5, 9],
+      "sign": "<=",
+      "rhs": 0
+    },
+
+    {
+      "coefficients": [0.5, -1.5, -0.5, 1],
+      "sign": "<=",
+      "rhs": 0
+    },
+
+    {
+      "coefficients": [1, 0, 0, 0],
+      "sign": "<=",
+      "rhs": 1
+    }
+  ]
+}

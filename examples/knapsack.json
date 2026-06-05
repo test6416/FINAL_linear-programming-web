@@ -1,0 +1,16 @@
+{
+  "name": "Knapsack Relaxation",
+
+  "type": "max",
+
+  "objective": [10, 6, 8, 4],
+
+  "constraints": [
+
+    {
+      "coefficients": [4, 2, 3, 1],
+      "sign": "<=",
+      "rhs": 6
+    }
+  ]
+}

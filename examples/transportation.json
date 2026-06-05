@@ -1,0 +1,40 @@
+{
+  "name": "Transportation Problem",
+
+  "type": "min",
+
+  "objective": [2, 3, 1, 5, 4, 8],
+
+  "constraints": [
+
+    {
+      "coefficients": [1, 1, 1, 0, 0, 0],
+      "sign": "=",
+      "rhs": 20
+    },
+
+    {
+      "coefficients": [0, 0, 0, 1, 1, 1],
+      "sign": "=",
+      "rhs": 30
+    },
+
+    {
+      "coefficients": [1, 0, 0, 1, 0, 0],
+      "sign": "=",
+      "rhs": 10
+    },
+
+    {
+      "coefficients": [0, 1, 0, 0, 1, 0],
+      "sign": "=",
+      "rhs": 15
+    },
+
+    {
+      "coefficients": [0, 0, 1, 0, 0, 1],
+      "sign": "=",
+      "rhs": 25
+    }
+  ]
+}

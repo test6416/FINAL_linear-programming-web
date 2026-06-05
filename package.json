@@ -1,0 +1,20 @@
+{
+  "name": "linear-programming-solver",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "mathjs": "^13.0.0",
+    "jspdf": "^2.5.1",
+    "xlsx": "^0.18.5",
+    "plotly.js-dist": "^2.35.2"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

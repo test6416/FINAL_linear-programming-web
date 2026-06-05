@@ -1,0 +1,28 @@
+{
+  "name": "Diet Problem",
+
+  "type": "min",
+
+  "objective": [50, 20],
+
+  "constraints": [
+
+    {
+      "coefficients": [400, 200],
+      "sign": ">=",
+      "rhs": 500
+    },
+
+    {
+      "coefficients": [3, 2],
+      "sign": ">=",
+      "rhs": 6
+    },
+
+    {
+      "coefficients": [2, 2],
+      "sign": ">=",
+      "rhs": 10
+    }
+  ]
+}

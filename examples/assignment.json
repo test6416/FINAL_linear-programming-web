@@ -1,0 +1,75 @@
+{
+  "name": "Assignment Problem",
+
+  "type": "min",
+
+  "objective": [
+
+    9, 2, 7,
+    6, 4, 3,
+    5, 8, 1
+  ],
+
+  "constraints": [
+
+    {
+      "coefficients": [
+        1,1,1,
+        0,0,0,
+        0,0,0
+      ],
+      "sign": "=",
+      "rhs": 1
+    },
+
+    {
+      "coefficients": [
+        0,0,0,
+        1,1,1,
+        0,0,0
+      ],
+      "sign": "=",
+      "rhs": 1
+    },
+
+    {
+      "coefficients": [
+        0,0,0,
+        0,0,0,
+        1,1,1
+      ],
+      "sign": "=",
+      "rhs": 1
+    },
+
+    {
+      "coefficients": [
+        1,0,0,
+        1,0,0,
+        1,0,0
+      ],
+      "sign": "=",
+      "rhs": 1
+    },
+
+    {
+      "coefficients": [
+        0,1,0,
+        0,1,0,
+        0,1,0
+      ],
+      "sign": "=",
+      "rhs": 1
+    },
+
+    {
+      "coefficients": [
+        0,0,1,
+        0,0,1,
+        0,0,1
+      ],
+      "sign": "=",
+      "rhs": 1
+    }
+  ]
+}

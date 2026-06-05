@@ -1,0 +1,226 @@
+
+---
+
+# `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Linear Programming Solver</title>
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  />
+
+  <script
+    src="https://cdn.plot.ly/plotly-2.35.2.min.js">
+  </script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Linear Programming Solver</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- INPUT -->
+
+    <section class="card">
+
+      <div class="card-title">
+        <div class="step-badge">1</div>
+        <h2>Kích thước bài toán</h2>
+      </div>
+
+      <div class="grid">
+
+        <div class="field">
+          <label>Số biến</label>
+
+          <input
+            type="number"
+            id="numVars"
+            class="w-sm"
+            min="1"
+            value="2"
+          />
+          <label>Số ràng buộc</label>
+
+          <input
+            type="number"
+            id="numConstraints"
+            class="w-sm"
+            min="1"
+            value="3"
+          />
+        </div>
+        <div style="margin-top:14px;">
+          <button id="buildBtn">
+            Tạo bài toán →
+          </button>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- OBJECTIVE -->
+
+    <section class="card">
+
+      <div class="card-title">
+        <div class="step-badge">2</div>
+        <h2>Hàm mục tiêu</h2>
+      </div>
+      <div class = "grid">
+        <div class="field" style="margin-bottom: 14px;">
+
+          <label>Loại bài toán</label>
+
+          <select id="objectiveType">
+            <option value="max">Max</option>
+            <option value="min">Min</option>
+          </select>
+
+        </div>
+
+        <div id="objectiveInputs"></div>
+
+        <div class="preview" id="objectivePreview"></div>
+      </div>
+    </section>
+
+    <!-- VARIABLE CONSTRAINTS -->
+
+    <section class="card">
+
+      <div class="card-title">
+        <div class="step-badge">3</div>
+        <h2>Ràng buộc biến</h2>
+      </div>
+  
+      <div class = "grid" id="variableConstraints"></div>
+
+    </section>
+
+    <!-- CONSTRAINTS -->
+
+    <section class="card">
+
+      <div class="card-title">
+        <div class="step-badge">4</div>
+        <h2>Hệ ràng buộc</h2>
+      </div>
+
+      <div class = "grid" id="constraintsContainer"></div>
+
+    </section>
+
+    <!-- OPTIONS -->
+
+    <section class="card">
+
+      <div class="card-title">
+        <div class="step-badge">5</div>
+        <h2>Thuật toán</h2>
+      </div>
+
+      <div class="grid">
+
+        <div class="field">
+          <label>Phương pháp</label>
+
+          <select id="method">
+            <option value="primal">
+              Đơn hình
+            </option>
+
+            <option value="twoPhase">
+              Hai pha
+            </option>
+
+            <option value="dual">
+              Đối ngẫu
+            </option>
+
+            <option value="bland">
+              Bland
+            </option>
+          </select>
+        </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ACTIONS -->
+
+    <section class="actions">
+
+      <button class="solve-btn" id="solveBtn">
+        Giải bài toán
+      </button>
+
+      <button class="reset-btn" id="resetBtn">
+        Đặt lại
+      </button>
+
+    </section>
+
+    <!-- RESULT -->
+
+    <section class="card result-card">
+
+      <div class="card-title">
+        Kết quả
+      </div>
+
+      <pre id="result"></pre>
+
+    </section>
+
+    <!-- GRAPH -->
+
+    <section class="card graph-card">
+
+      <div class="card-title">
+        Đồ thị miền nghiệm
+      </div>
+
+      <div id="graph"></div>
+
+    </section>
+
+    <!-- STEPS -->
+
+    <section class="card">
+
+      <div class="card-title">
+        Các bước giải
+      </div>
+
+      <div id="steps"></div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="./script.js"></script>
+
+</body>
+
+</html>

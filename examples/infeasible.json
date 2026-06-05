@@ -1,0 +1,22 @@
+{
+  "name": "Infeasible Example",
+
+  "type": "max",
+
+  "objective": [1, 1],
+
+  "constraints": [
+
+    {
+      "coefficients": [1, 1],
+      "sign": "<=",
+      "rhs": 2
+    },
+
+    {
+      "coefficients": [1, 1],
+      "sign": ">=",
+      "rhs": 5
+    }
+  ]
+}

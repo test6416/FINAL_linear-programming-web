@@ -1,0 +1,23 @@
+:root {
+
+  --bg: #f4f5f7;
+
+  --card: #ffffff;
+
+  --text: #1c1c1c;
+
+  --border: #dcdcdc;
+
+  --primary: #2563eb;
+
+  --success: #16a34a;
+
+  --danger: #dc2626;
+}
+
+body {
+
+  background: var(--bg);
+
+  color: var(--text);
+}

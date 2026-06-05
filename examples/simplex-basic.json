@@ -1,0 +1,28 @@
+{
+  "name": "Simplex Basic Example",
+
+  "type": "max",
+
+  "objective": [3, 5],
+
+  "constraints": [
+
+    {
+      "coefficients": [1, 0],
+      "sign": "<=",
+      "rhs": 4
+    },
+
+    {
+      "coefficients": [0, 2],
+      "sign": "<=",
+      "rhs": 12
+    },
+
+    {
+      "coefficients": [3, 2],
+      "sign": "<=",
+      "rhs": 18
+    }
+  ]
+}
