@@ -553,7 +553,7 @@ function renderSolutionGraph(
 ) {
 
   if (
-    rawProblem.objective.length !== 2
+    rawProblem.objective.length !== 2 && rawProblem.objective.length !== 3
   ) {
 
     return;
@@ -673,6 +673,8 @@ function renderSteps(steps) {
 
 function resetProblem() {
 
+  clearOutput(); 
+  
   numVarsInput.value = 2;
   numConstraintsInput.value = 3;
 
