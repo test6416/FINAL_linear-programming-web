@@ -445,8 +445,22 @@ function collectProblem() {
   };
 }
 
+function clearOutput() {
+  resultEl.textContent = "";
+  stepsEl.innerHTML = "";
+
+  const graph =
+    document.getElementById("graph");
+
+  if (graph) {
+    graph.innerHTML = "";
+  }
+}
+
 function solveProblem() {
 
+  clearOutput();
+  
   try {
 
     const rawProblem =
