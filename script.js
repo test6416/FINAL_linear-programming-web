@@ -95,6 +95,7 @@ function buildProblem() {
     numConstraintsInput.value
   );
 
+  clearOutput(); 
   buildObjective();
   buildVariableConstraints();
   buildConstraints();
@@ -674,10 +675,6 @@ function renderSteps(steps) {
 function resetProblem() {
 
   clearOutput(); 
-  
-  numVarsInput.value = 2;
-  numConstraintsInput.value = 3;
-
   buildProblem();
 
   resultEl.textContent = "";
